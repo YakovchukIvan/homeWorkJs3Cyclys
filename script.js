@@ -271,31 +271,73 @@
 // Task 2
 // 2. Запросіть 2 числа і знайдіть тільки найбільший спільний дільник
 
-let y = 15;
-//  +prompt("Введіть перше число: ");
-let x = 35;
-//  +prompt("Введіть другечисло: ");
+// let y = 15;
+// //  +prompt("Введіть перше число: ");
+// let x = 35;
+// //  +prompt("Введіть другечисло: ");
 
-// function NOD (x, y) {
-// 	if (y > x) return NOD(y, x);
-// 	if (!y) return x;
-// 	return NOD(y, x % y);
+// // function NOD (x, y) {
+// // 	if (y > x) return NOD(y, x);
+// // 	if (!y) return x;
+// // 	return NOD(y, x % y);
+// // }
+// // console.log(NOD(number1, number2));
+
+// let number1 = +prompt("Введіть перше число: ");
+// let number2 = +prompt("Введіть другечисло: ");
+// let gcd;
+// while (number1!=number2) {
+//   if (number1>number2) {
+//     number1 = number1 -number2;
+//   }
+//   else {
+//     number2 = number2 - number1;
+//   }
 // }
-// console.log(NOD(number1, number2));
+// gcd = number1;
+// console.log(gcd);
 
-let number1 = +prompt("Введіть перше число: ");
-let number2 = +prompt("Введіть другечисло: ");
-let gcd;
-while (number1!=number2) {
-  if (number1>number2) {
-    number1 = number1 -number2;
-  }
-  else {
-    number2 = number2 - number1;
+
+// Task 3
+// 3. Запросіть у користувача число та виведіть усі дільники цього числа
+
+let out = document.getElementById("out");
+let number = +prompt("Введіть число та отримайте усі дільники цього числа");
+
+let tmp = "";
+
+for(let i = 0; i < number; i++) {
+  if(number%i===0){
+    tmp = tmp + i + " ";
   }
 }
-gcd = number1;
-console.log(gcd);
 
 
 
+
+
+
+
+
+
+// Вивести чісла від 4 до 400 на екран
+
+
+// for (let i = 4; i <= 400; i++) {
+//   tmp = tmp + i + " ";
+// }
+
+// Вивести числа в послідовності 4 7 10 13 з допомогою цикла
+
+// for (let i = 4; i <= 13; i+=3) {
+//   tmp = tmp + i + " ";
+// }
+
+
+
+
+
+
+
+
+out.innerHTML = tmp;
