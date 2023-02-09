@@ -307,13 +307,14 @@ let number = +prompt("Введіть число та отримайте усі �
 let tmp = "";
 
 for(let i = 0; i < number; i++) {
-  if(number%i===0){
-    tmp = tmp + i + " ";
+  if (number === 1 || number === 0) {
+    tmp = "Потрібно ввести більше число";
+  } else if(number%i===0){
+    tmp = tmp + i + ", ";
   }
 }
 
-
-
+out.innerHTML = tmp;
 
 
 
@@ -340,4 +341,4 @@ for(let i = 0; i < number; i++) {
 
 
 
-out.innerHTML = tmp;
+
