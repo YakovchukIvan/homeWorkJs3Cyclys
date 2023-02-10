@@ -246,6 +246,12 @@
 
 
 
+
+
+
+
+
+
 // for(початок, умова, крок){
 //     тіло циклу
 // }
@@ -301,20 +307,87 @@
 // Task 3
 // 3. Запросіть у користувача число та виведіть усі дільники цього числа
 
-let out = document.getElementById("out");
-let number = +prompt("Введіть число та отримайте усі дільники цього числа");
+// let out = document.getElementById("out");
+// let number = +prompt("Введіть число та отримайте усі дільники цього числа");
 
-let tmp = "";
+// let tmp = "";
 
-for(let i = 0; i < number; i++) {
-  if (number === 1 || number === 0) {
-    tmp = "Потрібно ввести більше число";
-  } else if(number%i===0){
-    tmp = tmp + i + ", ";
+// for(let i = 0; i < number; i++) {
+//   if (number === 1 || number === 0) {
+//     tmp = "Потрібно ввести більше число";
+//   } else if(number%i===0){
+//     tmp = tmp + i + ", ";
+//   }
+// }
+
+// out.innerHTML = tmp;
+
+
+// Task 4
+// 4. Визначте кількість цифр у введеному числі
+
+
+// let out = document.getElementById("out");
+// let num = +prompt("Введіть число та отримайте загальну цифру цього числа");
+// let len = 0;
+
+// for(let i = 0; i < num || num == 1 ; i++){
+//   num = Math.trunc(num/10);
+//   len++ ;
+// }
+// out.innerHTML = len;
+
+
+// Task 5
+// 5. Запросіть у користувача 10 чисел і підрахуйте, скільки він 
+// ввів додатних чисел, від’ємних та нулів. При цьому підрахуйте також кількість парних і непарних чисел. Виведіть 
+// статистику на екран. Враховуйте те, що достатньо однієї 
+// змінної (не 10) для введення чисел користувачем
+
+
+// let out = document.getElementById("out");
+
+let start = confirm("Ви готові вводити 10 чисел?");
+let tmp = 0;
+let positive = 0;
+let negative = 0;
+let zero = 0;
+let even = 0; // парні
+let odd = 0; // не парні 
+
+while (start == true) { // змінна start запускає цикл
+  if (tmp < 3) { 
+
+    let num = +prompt("Введіть 10 чисел: ");
+    tmp++;
+    console.log(tmp + "-число: " + num);
+    let result = num % 2 == 0 ? (even = even + 1) : (odd = odd + 1);
+    result; // це для того щоб тернарний вище працював і рахував парні та не парні
+    Math.sign(num);
+      if (num > 0) {
+        positive++;
+      } else if (num < 0) {
+        negative++;
+      } else if (num === 0 || num === -0) {
+        zero++;
+      } else {
+        alert("Невірно введене число");
+      }
+
+  } else {
+    break;
   }
-}
+} 
 
-out.innerHTML = tmp;
+console.log("Всього введено чисел: " + tmp);
+console.log("Додатніх чисел: " + positive);
+console.log("Від’ємних чисел: " + negative);
+console.log("Нулів: " + zero);
+console.log("Парних чисел: " + even);
+console.log("Не парних чисел: " + odd);
+
+
+
 
 
 
