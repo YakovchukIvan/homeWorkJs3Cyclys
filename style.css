@@ -24,3 +24,47 @@ body {
     color: white;
 }
 
+div {
+    border: 1px solid rgb(27, 27, 27);
+    border-radius: 15px;
+    padding: 30px 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+p {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+p:nth-child(1) {
+    background-color: rgb(50, 97, 81);
+}
+p:nth-child(2) {
+    background-color: rgb(71, 97, 50);
+}
+p:nth-child(3) {
+    background-color: rgb(50, 97, 54);
+}
+p:nth-child(4) {
+    background-color: rgb(50, 69, 97);
+}
+p:nth-child(5) {
+    background-color: rgb(51, 50, 97);
+}
+p:nth-child(6) {
+    background-color: rgb(80, 50, 97);
+}
+
+p:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+span {
+    padding: 5px 10px;
+    font-size: 24px;
+    background-color: rgb(130, 184, 51);
+    border-radius: 5px;
+}
