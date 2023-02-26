@@ -158,9 +158,44 @@
 доти, доки користувач не відмовиться.
 */
 
+// let question = 1;
+
+// while (question == 1) {
+//     let num1 = +prompt("Введіть перше число");
+//     let num2 = +prompt("Введіть друге число");
+//     let task = +prompt("Введіть дію: \n 1. + \n 2. - \n 3. / \n 4. *");
+//     switch (task) {
+//         case 1:
+//             alert(num1 + num2);
+//         break;
+//         case 2:
+//             alert(num1 - num2);
+//         break;
+//         case 3:
+//             alert(num1 / num2);
+//         break;
+//         case 4:
+//             alert(num1 * num2);
+//         break;
+//     }
+//     // if (task === 1) {
+//     //     alert(num1 + num2);
+//     // } else if (task === 2) {
+//     //     alert(num1 - num2);
+//     // } else if (task === 3) {
+//     //     alert(num1 / num2);
+//     // } else if (task === 4) {
+//     //     alert(num1 * num2);
+//     // };
 
 
-
+//     question = confirm("Бажаєте продовжити?");
+//     if (question === true) {
+//         question = 1;
+//     } else if (question === false) {
+//         question = 0;
+//     }
+// }
 
 
 
@@ -169,55 +204,64 @@
 число 123456 змістити на 2 цифри, то вийде 345612).
 */
 
-// let num1 = +prompt("Введіть число: ");
-// let num2 = +prompt("Введіть на скільки число змістити: ");
 
-
-let number = prompt("Введіть число:");
-let shift = prompt("Введіть, на скільки цифр зсунути число:");
-
-// Конвертуємо число та зсув у цілі числа
-number = parseInt(number);
-shift = parseInt(shift);
-
-// Зсуваємо цифри числа на вказану кількість цифр
-let shiftedNumber = number.toString().slice(shift) + number.toString().slice(0, shift);
-
-console.log(`Число ${number} зсунуто на ${shift} цифр і стало ${shiftedNumber}`);
+// let number = prompt("Введіть число:");
+// let shift = prompt("Введіть, на скільки цифр зсунути число:");
+// // Зсуваємо цифри числа на вказану кількість цифр
+// let shiftedNumber = number.toString().slice(shift) + number.toString().slice(0, shift);
+// let result = (`Число ${number} зсунуто на ${shift} цифр і стало ${shiftedNumber}`);
+// out.innerHTML = result;
 
 
 
+/* 
+8. Зацикліть виведення днів тижня таким чином: «День
+тижня. Бажаєте побачити назву наступного дня тижня?”,
+і так доти, доки користувач натискатиме OK.
+*/
 
 
+// let question = 1;
 
-
-// for(i = 2; i <= 9; i ++);{
-//   console.log(number);
-//     for(b = 1; b <= 10; b + 1){
-//         number = i * b
-//         console.log(number);
+// while (question == 1) {
+//     let num1 = +prompt("Введіть перше число");
+//     let num2 = +prompt("Введіть друге число");
+//     let task = +prompt("Введіть дію: \n 1. + \n 2. - \n 3. / \n 4. *");
+//     switch (task) {
+//         case 1:
+//             alert(num1 + num2);
+//         break;
+//         case 2:
+//             alert(num1 - num2);
+//         break;
+//         case 3:
+//             alert(num1 / num2);
+//         break;
+//         case 4:
+//             alert(num1 * num2);
+//         break;
 //     }
-    
+//     // if (task === 1) {
+//     //     alert(num1 + num2);
+//     // } else if (task === 2) {
+//     //     alert(num1 - num2);
+//     // } else if (task === 3) {
+//     //     alert(num1 / num2);
+//     // } else if (task === 4) {
+//     //     alert(num1 * num2);
+//     // };
+
+
+//     question = confirm("Сьогодні ");
+//     if (question === true) {
+//         question = 1;
+//     } else if (question === false) {
+//         question = 0;
+//     }
 // }
 
-// Вивести чісла від 4 до 400 на екран
-
-
-// for (let i = 4; i <= 400; i++) {
-//   tmp = tmp + i + " ";
-// }
-
-// Вивести числа в послідовності 4 7 10 13 з допомогою цикла
-
-// for (let i = 4; i <= 13; i+=3) {
-//   tmp = tmp + i + " ";
-// }
-
-
-
-
-
-
-
-
-
+let dataUser = new Date();
+console.log(dataUser.getDay());
+if (dataUser.getDay() === 0) {
+    console.log("Неділя");
+}
