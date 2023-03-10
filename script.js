@@ -221,47 +221,27 @@
 */
 
 
-// let question = 1;
 
-// while (question == 1) {
-//     let num1 = +prompt("Введіть перше число");
-//     let num2 = +prompt("Введіть друге число");
-//     let task = +prompt("Введіть дію: \n 1. + \n 2. - \n 3. / \n 4. *");
-//     switch (task) {
-//         case 1:
-//             alert(num1 + num2);
-//         break;
-//         case 2:
-//             alert(num1 - num2);
-//         break;
-//         case 3:
-//             alert(num1 / num2);
-//         break;
-//         case 4:
-//             alert(num1 * num2);
-//         break;
-//     }
-//     // if (task === 1) {
-//     //     alert(num1 + num2);
-//     // } else if (task === 2) {
-//     //     alert(num1 - num2);
-//     // } else if (task === 3) {
-//     //     alert(num1 / num2);
-//     // } else if (task === 4) {
-//     //     alert(num1 * num2);
-//     // };
+// let days = ['Неділя', 'Понеділок', 'Вівторок', 'Середа', 'Четвер', 'Пятниця', 'Субота'];
+// console.log(days);
+
+// let currentDay = new Date().getDay();
+// console.log(currentDay);
+
+// do {
+//   alert(days[currentDay] + '. Бажаєте побачити назву наступного дня тижня?');
+//   currentDay = (currentDay + 1) % 7;
+//   console.log(days[currentDay]);
+// } while (confirm('Бажаєте продовжити?'));
 
 
-//     question = confirm("Сьогодні ");
-//     if (question === true) {
-//         question = 1;
-//     } else if (question === false) {
-//         question = 0;
-//     }
-// }
 
-let dataUser = new Date();
-console.log(dataUser.getDay());
-if (dataUser.getDay() === 0) {
-    console.log("Неділя");
-}
+/* 
+9. Виведіть таблицю множення для всіх чисел від 2 до 9.
+Кожне число необхідно помножити на числа від 1 до 10.
+*/
+
+
+let 
+
+
